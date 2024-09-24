@@ -1,0 +1,15 @@
+#find second and third largest value in list
+
+list1=[11,15,3,4,5,17,1.5,2,14,16]
+#declare the second and third largest values
+second_largest=largest=third_largest=list1[0]
+#start looping
+for i in list1:
+    if i < max(list1) and  second_largest < i:
+        third_largest=second_largest
+        second_largest=i
+    
+        
+print(third_largest,second_largest)
+
+
